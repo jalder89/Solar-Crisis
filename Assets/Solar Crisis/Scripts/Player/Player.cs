@@ -12,8 +12,11 @@ public class Player : MonoBehaviour
     public int facingDir { get; private set; } = 1;
     private bool facingRight = true;
 
-    public bool canInteract = false;
     public bool canType = false;
+    public bool canInteract = false;
+    public bool isAtComputer = false;
+
+    public float idleTimer;
 
     #region Components
     public Animator anim { get; private set; }
@@ -43,6 +46,8 @@ public class Player : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        idleTimer = 0;
 
         stateMachine.Initialize(idleState);
     }

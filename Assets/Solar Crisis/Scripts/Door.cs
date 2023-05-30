@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BrokenBot : MonoBehaviour
+public class Door : MonoBehaviour
 {
-    private Canvas botUI;
+    private Canvas doorUI;
     private Player player;
 
     // Start is called before the first frame update
     void Start()
     {
-        botUI = gameObject.GetComponentInChildren<Canvas>();
+        doorUI = gameObject.GetComponentInChildren<Canvas>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
 
@@ -24,9 +24,9 @@ public class BrokenBot : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            botUI.enabled = !botUI.enabled;
-            player.canType = true;
-            Debug.Log("The player is in front of the broken bot");
+            doorUI.enabled = !doorUI.enabled;
+            player.canInteract = true;
+            Debug.Log("The player is in front of the door");
         }
     }
 
@@ -34,9 +34,9 @@ public class BrokenBot : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            botUI.enabled = !botUI.enabled;
-            player.canType = false;
-            Debug.Log("The player has left the broken bot");
+            doorUI.enabled = !doorUI.enabled;
+            player.canInteract = true;
+            Debug.Log("The player has left the door");
         }
     }
 }

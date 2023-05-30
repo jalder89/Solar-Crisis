@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerState
 {
+
     public PlayerIdleState(Player _player, PlayerStateMachine _stateMachine, string _animBoolName) : base(_player, _stateMachine, _animBoolName)
     {
     }
@@ -16,11 +17,16 @@ public class PlayerIdleState : PlayerState
     public override void Exit()
     {
         base.Exit();
+        player.anim.SetBool("IdleLong", false);
+        player.idleTimer = 0;
     }
 
     public override void Update()
     {
         base.Update();
+        player.idleTimer += Time.deltaTime;
+
+        Debug.Log("Idle Time: " + player.idleTimer);
 
         if (xInput != 0)
         {
@@ -35,6 +41,13 @@ public class PlayerIdleState : PlayerState
         if (Input.GetButtonDown("Interact") && player.canType)
         {
             stateMachine.ChangeState(player.typingState);
+        }
+
+        // Needs long idle state for proper control
+        if (player.idleTimer >= 5)
+        {
+            player.anim.SetBool("Idle", false);
+            player.anim.SetBool("IdleLong", true);
         }
     }
 }

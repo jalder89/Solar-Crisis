@@ -12,6 +12,7 @@ public class PlayerTypingState : PlayerState
     {
         base.Enter();
         Debug.Log("Entering typing state");
+        
     }
 
     public override void Exit()
