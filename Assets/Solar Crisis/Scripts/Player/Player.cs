@@ -12,6 +12,9 @@ public class Player : MonoBehaviour
     public int facingDir { get; private set; } = 1;
     private bool facingRight = true;
 
+    public bool canInteract = false;
+    public bool canType = false;
+
     #region Components
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
@@ -22,6 +25,8 @@ public class Player : MonoBehaviour
 
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
+    public PlayerInteractState interactState { get; private set; }
+    public PlayerTypingState typingState { get; private set; }
     #endregion
 
     private void Awake()
@@ -30,6 +35,8 @@ public class Player : MonoBehaviour
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
+        interactState = new PlayerInteractState(this, stateMachine, "Interact");
+        typingState = new PlayerTypingState(this, stateMachine, "Typing");
     }
 
     private void Start()

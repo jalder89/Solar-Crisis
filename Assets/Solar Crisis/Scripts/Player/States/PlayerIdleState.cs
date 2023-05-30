@@ -26,5 +26,15 @@ public class PlayerIdleState : PlayerState
         {
             stateMachine.ChangeState(player.moveState);
         }
+
+        if (Input.GetButtonDown("Interact") && player.canInteract)
+        {
+            stateMachine.ChangeState(player.interactState);
+        }
+
+        if (Input.GetButtonDown("Interact") && player.canType)
+        {
+            stateMachine.ChangeState(player.typingState);
+        }
     }
 }
