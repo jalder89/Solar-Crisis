@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8b78a009b4bea4729b12f9bfd30c2de0
+guid: eb85a2580dff140ce8a872d8323cdbe9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_0
+      name: left_terminal_main_hall 144x107_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 196
-        width: 129
-        height: 98
+        y: 214
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1f009f944f4a43469b6b89a77d9ddd0
-      internalID: -501843026
+      spriteID: ecfc35375cb254dd481ea51fec4ab239
+      internalID: 715753657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_1
+      name: left_terminal_main_hall 144x107_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 98
-        width: 129
-        height: 98
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97edcf0fce4a642a097f3c632566d279
-      internalID: -346454349
+      spriteID: 40ecd5925bfe34a8f9364cd4dcf9a3b4
+      internalID: -1637117529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_2
+      name: left_terminal_main_hall 144x107_2
       rect:
         serializedVersion: 2
-        x: 129
-        y: 98
-        width: 129
-        height: 98
+        x: 144
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12bc8a90c9e447a194127a38ae844e5
-      internalID: 133044375
+      spriteID: 60d1d7437fad6478080b604002927521
+      internalID: -1460198527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_3
+      name: left_terminal_main_hall 144x107_3
       rect:
         serializedVersion: 2
-        x: 258
-        y: 98
-        width: 129
-        height: 98
+        x: 288
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f966071eb668746e3ba5ee20493a63a5
-      internalID: 829096251
+      spriteID: 7d0bdffe488794e94a914752621c9165
+      internalID: -2015908355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_4
+      name: left_terminal_main_hall 144x107_4
       rect:
         serializedVersion: 2
-        x: 387
-        y: 98
-        width: 129
-        height: 98
+        x: 432
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e82bab89d31a42db9f1091cb24224ef
-      internalID: 1651295309
+      spriteID: 933a1825edd8c4cba98c9cba5e0c8b6c
+      internalID: -92781756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_5
+      name: left_terminal_main_hall 144x107_5
       rect:
         serializedVersion: 2
-        x: 516
-        y: 98
-        width: 129
-        height: 98
+        x: 576
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a19bc2e5f6214966ad2056ffb21cbc1
-      internalID: -353070242
+      spriteID: 30e50e8e9fad3470580d5ace22d1f93e
+      internalID: -411043387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_6
+      name: left_terminal_main_hall 144x107_6
       rect:
         serializedVersion: 2
-        x: 645
-        y: 98
-        width: 129
-        height: 98
+        x: 720
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 719b6959d47704e009926f28d6d693de
-      internalID: 1612819275
+      spriteID: ff9a7db3102c54c2e98a899d7c69633b
+      internalID: -1359738237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_7
+      name: left_terminal_main_hall 144x107_7
       rect:
         serializedVersion: 2
-        x: 774
-        y: 98
-        width: 129
-        height: 98
+        x: 864
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68320d874ba30418d958ff3596120175
-      internalID: -1951303158
+      spriteID: 25369f1fefb2449008b84fef10138f3d
+      internalID: 423692917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_8
+      name: left_terminal_main_hall 144x107_8
       rect:
         serializedVersion: 2
-        x: 903
-        y: 98
-        width: 129
-        height: 98
+        x: 1008
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cf1a08b8e83a4233acc6f29b7d69f2d
-      internalID: 1286872609
+      spriteID: 16ee33b2f86a74ae4b0af81df00ed142
+      internalID: -1118986375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_9
+      name: left_terminal_main_hall 144x107_9
       rect:
         serializedVersion: 2
-        x: 1032
-        y: 98
-        width: 129
-        height: 98
+        x: 1152
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e730392fca3264a80bb76f0b860cb438
-      internalID: -934819806
+      spriteID: d797138aeb5a64f8abb7c4e083e83736
+      internalID: 832853173
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_10
+      name: left_terminal_main_hall 144x107_10
       rect:
         serializedVersion: 2
-        x: 1161
-        y: 98
-        width: 129
-        height: 98
+        x: 1296
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,20 +365,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37b8e88caf9d24bdeb94ae24f3f49817
-      internalID: 1780442932
+      spriteID: d915c3f74918c4e7f8d2cfd1bf01da52
+      internalID: -369039691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_11
+      name: left_terminal_main_hall 144x107_11
       rect:
         serializedVersion: 2
-        x: 1290
-        y: 98
-        width: 129
-        height: 98
+        x: 1440
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,20 +386,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54167fec56afc4ec394293e829d703d7
-      internalID: -818187319
+      spriteID: fdae1f432c4a041ddafd31830fa4d52a
+      internalID: -1426623296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_12
+      name: left_terminal_main_hall 144x107_12
       rect:
         serializedVersion: 2
-        x: 1419
-        y: 98
-        width: 129
-        height: 98
+        x: 1584
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 225ff8fe4537e41e1abac5f51c750ada
-      internalID: 1636792330
+      spriteID: 9deb8b11d2b724670be9d9007834fed4
+      internalID: 474689119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_13
+      name: left_terminal_main_hall 144x107_13
       rect:
         serializedVersion: 2
-        x: 1548
-        y: 98
-        width: 129
-        height: 98
+        x: 1728
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,20 +428,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8562dbb2759f44de28cfd6b4fa889ce9
-      internalID: -30463550
+      spriteID: 38128239405c44480bf9416736326561
+      internalID: 422095976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_14
+      name: left_terminal_main_hall 144x107_14
       rect:
         serializedVersion: 2
-        x: 1677
-        y: 98
-        width: 129
-        height: 98
+        x: 1872
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,20 +449,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b0f894a316bd493d925242cd8f68c96
-      internalID: -603912503
+      spriteID: bfc0b0f8308b54977bdc20047933699c
+      internalID: 1726248808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_15
+      name: left_terminal_main_hall 144x107_15
       rect:
         serializedVersion: 2
-        x: 1806
-        y: 98
-        width: 129
-        height: 98
+        x: 2016
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,20 +470,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e478dc34fce743df8fd321b0eafdd6d
-      internalID: -419527953
+      spriteID: 1c22c551aa015461dbac549328169bc6
+      internalID: -1547622068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_16
+      name: left_terminal_main_hall 144x107_16
       rect:
         serializedVersion: 2
-        x: 1935
-        y: 98
-        width: 129
-        height: 98
+        x: 2160
+        y: 107
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,20 +491,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40b73450e5be4e808b9583acea46257
-      internalID: -1053567459
+      spriteID: c2e164bd8193046288e188b64519f8af
+      internalID: -896675848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: left_terminal_main_hall 129x98_17
+      name: left_terminal_main_hall 144x107_17
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 129
-        height: 98
+        width: 144
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,8 +512,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80b18a63dee4b499189775a39477bebc
-      internalID: 1652912265
+      spriteID: 03c6259fd9379461e926cf99f9c5f7c0
+      internalID: 1724064052
       vertices: []
       indices: 
       edges: []
@@ -529,24 +529,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      left_terminal_main_hall 129x98_0: -501843026
-      left_terminal_main_hall 129x98_1: -346454349
-      left_terminal_main_hall 129x98_10: 1780442932
-      left_terminal_main_hall 129x98_11: -818187319
-      left_terminal_main_hall 129x98_12: 1636792330
-      left_terminal_main_hall 129x98_13: -30463550
-      left_terminal_main_hall 129x98_14: -603912503
-      left_terminal_main_hall 129x98_15: -419527953
-      left_terminal_main_hall 129x98_16: -1053567459
-      left_terminal_main_hall 129x98_17: 1652912265
-      left_terminal_main_hall 129x98_2: 133044375
-      left_terminal_main_hall 129x98_3: 829096251
-      left_terminal_main_hall 129x98_4: 1651295309
-      left_terminal_main_hall 129x98_5: -353070242
-      left_terminal_main_hall 129x98_6: 1612819275
-      left_terminal_main_hall 129x98_7: -1951303158
-      left_terminal_main_hall 129x98_8: 1286872609
-      left_terminal_main_hall 129x98_9: -934819806
+      left_terminal_main_hall 144x107_0: 715753657
+      left_terminal_main_hall 144x107_1: -1637117529
+      left_terminal_main_hall 144x107_10: -369039691
+      left_terminal_main_hall 144x107_11: -1426623296
+      left_terminal_main_hall 144x107_12: 474689119
+      left_terminal_main_hall 144x107_13: 422095976
+      left_terminal_main_hall 144x107_14: 1726248808
+      left_terminal_main_hall 144x107_15: -1547622068
+      left_terminal_main_hall 144x107_16: -896675848
+      left_terminal_main_hall 144x107_17: 1724064052
+      left_terminal_main_hall 144x107_2: -1460198527
+      left_terminal_main_hall 144x107_3: -2015908355
+      left_terminal_main_hall 144x107_4: -92781756
+      left_terminal_main_hall 144x107_5: -411043387
+      left_terminal_main_hall 144x107_6: -1359738237
+      left_terminal_main_hall 144x107_7: 423692917
+      left_terminal_main_hall 144x107_8: -1118986375
+      left_terminal_main_hall 144x107_9: 832853173
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -74,12 +74,10 @@ public class Player : MonoBehaviour
     {
         if (_x > 0 && !facingRight)
         {
-            Debug.Log("Flipped: " + rb.velocity.x);
             Flip();
         }
         else if (_x < 0 && facingRight)
         {
-            Debug.Log("Flipped: " + rb.velocity.x);
             Flip();
         }
     }

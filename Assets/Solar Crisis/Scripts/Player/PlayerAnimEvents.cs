@@ -5,12 +5,11 @@ using UnityEngine;
 public class PlayerAnimEvents : MonoBehaviour
 {
     private Player player;
-    private Terminal terminal;
+    public Terminal terminal;
 
     private void Start()
     {
         player = GameObject.Find("Player").GetComponent<Player>();
-        terminal = GameObject.Find("Entry Terminal").GetComponent<Terminal>();
     }
     public void TypingComplete()
     {

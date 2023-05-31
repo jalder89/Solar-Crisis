@@ -48,7 +48,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: a2fb9727cc1d9427aa3ce5bcb014253a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 57658a7bf1dea4cb88fb279a2c9c004e, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -60,7 +60,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: EntryTerminal_AC
+  m_Name: LeftTerminal_AC
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: PowerOn
@@ -125,7 +125,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 428f07903cbfc4f6086572d37b027227, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8c8deb5a8f137458eb14e6c4cd57a978, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -177,7 +177,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: d33615640373940f38bf77cd79619e36, type: 2}
+  m_Motion: {fileID: 7400000, guid: 064f4603f80a7409c898b8a689086df4, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
