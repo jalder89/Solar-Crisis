@@ -26,7 +26,6 @@ public class Door : MonoBehaviour
         {
             doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
-            Debug.Log("The player is in front of the door");
         }
     }
 
@@ -36,7 +35,6 @@ public class Door : MonoBehaviour
         {
             doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
-            Debug.Log("The player has left the door");
         }
     }
 }

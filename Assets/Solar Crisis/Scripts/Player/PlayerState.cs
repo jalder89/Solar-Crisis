@@ -29,7 +29,6 @@ public class PlayerState
     public virtual void Update()
     {
         xInput = Input.GetAxisRaw("Horizontal");
-        Debug.Log("I am in " + animBoolName);
     }
 
     public virtual void Exit()

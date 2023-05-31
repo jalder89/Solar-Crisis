@@ -33,7 +33,6 @@ public class Terminal : MonoBehaviour
         {
             terminalUI.enabled = !terminalUI.enabled;
             player.isAtComputer = true;
-            Debug.Log("The player is in front of the terminal");
 
             if (isPowerOn)
             {
@@ -56,7 +55,6 @@ public class Terminal : MonoBehaviour
             player.isAtComputer = false;
             player.canType = false;
             player.canInteract = false;
-            Debug.Log("The player has left the terminal");
         }
     }
 }

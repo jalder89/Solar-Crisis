@@ -23,7 +23,6 @@ public class PlayerInteractState : PlayerState
     public override void Update()
     {
         base.Update();
-        Debug.Log("Interacting...");
     }
 
     public void Test()

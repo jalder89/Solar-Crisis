@@ -26,8 +26,6 @@ public class PlayerIdleState : PlayerState
         base.Update();
         player.idleTimer += Time.deltaTime;
 
-        Debug.Log("Idle Time: " + player.idleTimer);
-
         if (xInput != 0)
         {
             stateMachine.ChangeState(player.moveState);
@@ -44,7 +42,7 @@ public class PlayerIdleState : PlayerState
         }
 
         // Needs long idle state for proper control
-        if (player.idleTimer >= 5)
+        if (player.idleTimer >= 15)
         {
             player.anim.SetBool("Idle", false);
             player.anim.SetBool("IdleLong", true);
