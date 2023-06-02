@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class Terminal : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class Terminal : MonoBehaviour
         {
             terminalUI.enabled = !terminalUI.enabled;
             player.isAtComputer = true;
+            player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
 
             if (isPowerOn)
             {

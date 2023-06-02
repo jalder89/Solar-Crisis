@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class BrokenBot : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class BrokenBot : MonoBehaviour
         {
             botUI.enabled = !botUI.enabled;
             player.canType = true;
+            player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
             Debug.Log("The player is in front of the broken bot");
         }
     }
