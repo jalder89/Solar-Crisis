@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class Player : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class Player : MonoBehaviour
     public bool canType = false;
     public bool canInteract = false;
     public bool isAtComputer = false;
+    public DialogueSystemTrigger trigger;
 
     public float idleTimer;
 

@@ -11,6 +11,7 @@ public class PlayerTypingState : PlayerState
     public override void Enter()
     {
         base.Enter();
+        player.trigger.OnUse();
         Debug.Log("Entering typing state");
         
     }
