@@ -32,7 +32,7 @@ public class Terminal : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            terminalUI.enabled = !terminalUI.enabled;
+            // terminalUI.enabled = !terminalUI.enabled;
             player.isAtComputer = true;
             player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
 
@@ -53,10 +53,16 @@ public class Terminal : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            terminalUI.enabled = !terminalUI.enabled;
+            // terminalUI.enabled = !terminalUI.enabled;
             player.isAtComputer = false;
             player.canType = false;
             player.canInteract = false;
         }
+    }
+
+    public void TurnOn()
+    {
+        audioSource.PlayOneShot(audioSource.clip);
+        anim.SetBool("PowerOn", true);
     }
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class PlayerAnimEvents : MonoBehaviour
 {
@@ -23,8 +24,9 @@ public class PlayerAnimEvents : MonoBehaviour
             terminal.isPowerOn = true;
             player.canType = true;
             player.canInteract = false;
-            terminal.anim.SetBool("PowerOn", true);
+            // terminal.anim.SetBool("PowerOn", true);
             player.anim.SetBool("Interact", false);
+            player.stateMachine.ChangeState(player.idleState);
         } else
         {
             player.stateMachine.ChangeState(player.idleState);
