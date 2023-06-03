@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class Door : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
+            player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
             doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
         }
