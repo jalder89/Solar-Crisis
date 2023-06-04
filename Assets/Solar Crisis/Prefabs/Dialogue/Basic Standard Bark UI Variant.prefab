@@ -55,6 +55,10 @@ PrefabInstance:
       propertyPath: includeName
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11426712, guid: 21b4828b943afef4896267f31f98ee1a, type: 3}
+      propertyPath: waitUntilSequenceEnds
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11443988, guid: 21b4828b943afef4896267f31f98ee1a, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -66,6 +70,10 @@ PrefabInstance:
     - target: {fileID: 22393676, guid: 21b4828b943afef4896267f31f98ee1a, type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 22393676, guid: 21b4828b943afef4896267f31f98ee1a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22393676, guid: 21b4828b943afef4896267f31f98ee1a, type: 3}
       propertyPath: m_RenderMode

@@ -5,13 +5,11 @@ using PixelCrushers.DialogueSystem;
 
 public class BrokenBot : MonoBehaviour
 {
-    private Canvas botUI;
     private Player player;
 
     // Start is called before the first frame update
     void Start()
     {
-        botUI = gameObject.GetComponentInChildren<Canvas>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
 
@@ -25,7 +23,6 @@ public class BrokenBot : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            botUI.enabled = !botUI.enabled;
             player.canType = true;
             player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
             Debug.Log("The player is in front of the broken bot");
@@ -36,7 +33,6 @@ public class BrokenBot : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            botUI.enabled = !botUI.enabled;
             player.canType = false;
             Debug.Log("The player has left the broken bot");
         }
