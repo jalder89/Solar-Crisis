@@ -534,7 +534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190783456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.082873, y: -2.859, z: -10}
+  m_LocalPosition: {x: -12.099437, y: -2.859, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3933,7 +3933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightToLeft: 0
-  charactersPerSecond: 20
+  charactersPerSecond: 36
   audioClip: {fileID: 8300000, guid: f8826af65518e4a109aa310ad8e458f5, type: 3}
   alternateAudioClips: []
   audioSource: {fileID: 0}
@@ -3941,11 +3941,11 @@ MonoBehaviour:
   interruptAudioClip: 1
   stopAudioOnSilentCharacters: 1
   stopAudioOnPauseCodes: 1
-  silentCharacters: ' e'
+  silentCharacters: 
   fullPauseCharacters: 
   quarterPauseCharacters: ',-;'
   fullPauseDuration: 1
-  quarterPauseDuration: 0.25
+  quarterPauseDuration: 0.2
   removeDuplicateTypewriterEffects: 1
   playOnEnable: 1
   waitOneFrameBeforeStarting: 0
@@ -4932,7 +4932,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 86.6193}
+  m_AnchoredPosition: {x: 0, y: 86.61923}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1456883791
