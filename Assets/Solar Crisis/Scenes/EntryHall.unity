@@ -123,6 +123,116 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &530371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6453474002049048721, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
+  m_PrefabInstance: {fileID: 9045082589083082755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &530372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3589268323420775428, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
+  m_PrefabInstance: {fileID: 9045082589083082755}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &530374
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530371}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.23971725, y: -5.19387}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.23736, y: 1.4261637}
+  m_EdgeRadius: 0
+--- !u!114 &530375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: 8
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags:
+    - Player
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  setQuestState: 1
+  questName: 
+  questState: 0
+  setQuestEntryState: 0
+  questEntryNumber: 1
+  questEntryState: 0
+  setAnotherQuestEntryState: 0
+  anotherQuestEntryNumber: 1
+  anotherQuestEntryState: 0
+  luaCode: 
+  sequence: 
+  sequenceSpeaker: {fileID: 0}
+  sequenceListener: {fileID: 0}
+  waitOneFrameOnStartOrEnable: 1
+  alertMessage: 
+  textTable: {fileID: 0}
+  alertDuration: 0
+  sendMessages: []
+  barkSource: 2
+  barkConversation: 
+  barkText: Broken Bot
+  barkTextSequence: 
+  barker: {fileID: 530372}
+  barkTarget: {fileID: 0}
+  barkOrder: 0
+  allowBarksDuringConversations: 0
+  skipBarkIfNoValidEntries: 0
+  cacheBarkLines: 0
+  conversation: 
+  conversationConversant: {fileID: 0}
+  conversationActor: {fileID: 0}
+  startConversationEntryID: -1
+  startConversationEntryTitle: 
+  exclusive: 0
+  replace: 0
+  skipIfNoValidEntries: 0
+  preventRestartOnSameFrameEnded: 0
+  stopConversationOnTriggerExit: 0
+  stopConversationIfTooFar: 0
+  maxConversationDistance: 5
+  monitorConversationDistanceFrequency: 1
+  showCursorDuringConversation: 0
+  pauseGameDuringConversation: 0
+  setActiveActions: []
+  setEnabledActions: []
+  setAnimatorStateActions: []
+  onExecute:
+    m_PersistentCalls:
+      m_Calls: []
+  useConversationTitlePicker: 1
+  useBarkTitlePicker: 1
+  useQuestNamePicker: 1
+  selectedDatabase: {fileID: 11400000, guid: e1a95231f7ad04847b43da31241f36c1, type: 2}
 --- !u!1 &15513457
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,7 +305,7 @@ Transform:
   - {fileID: 535932086}
   - {fileID: 879789180}
   m_Father: {fileID: 653002815}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &15513461
 MonoBehaviour:
@@ -765,9 +875,9 @@ Transform:
   m_Children:
   - {fileID: 178473580}
   - {fileID: 1621375945}
-  - {fileID: 2114925153}
   - {fileID: 15513460}
   - {fileID: 648265782}
+  - {fileID: 2114925153}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1941,7 +2051,7 @@ PrefabInstance:
       objectReference: {fileID: 1013596874}
     - target: {fileID: 3310280724423667996, guid: 8f3ab4fc4fe674abaacae1aaf7eb9c3c, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3310280724423667996, guid: 8f3ab4fc4fe674abaacae1aaf7eb9c3c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2541,7 +2651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892942598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.000120104414, y: -0.19263999, z: -10}
+  m_LocalPosition: {x: 0.000119254495, y: -0.19263999, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2759,18 +2869,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9045082590189523554, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
   m_PrefabInstance: {fileID: 9045082589083082755}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2114925154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114925152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 361c97a53266b444189febdcacd3f80a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &2114925155
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2784,7 +2882,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.38354748, y: -0.34477735}
+  m_Offset: {x: 0.09, y: -0.24569833}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2795,7 +2893,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.484796, y: 0.83112955}
+  m_Size: {x: 3.03, y: 1.7228396}
   m_EdgeRadius: 0
 --- !u!114 &2114925156
 MonoBehaviour:
@@ -2871,45 +2969,6 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: e1a95231f7ad04847b43da31241f36c1, type: 2}
---- !u!114 &2114925157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114925152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 274b80ab5b659c646ba9338870d14625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  overrideName: 
-  overrideUseMessage: 
-  maxUseDistance: 5
-  events:
-    onSelect:
-      m_PersistentCalls:
-        m_Calls: []
-    onDeselect:
-      m_PersistentCalls:
-        m_Calls: []
-    onUse:
-      m_PersistentCalls:
-        m_Calls: []
---- !u!114 &2114925158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2114925152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42f17d3292d455242a47944a59dea99c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagSpecificElements: []
-  layerSpecificElements: []
 --- !u!1001 &9045082589083082755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2917,17 +2976,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 653002815}
     m_Modifications:
+    - target: {fileID: 5689650274479349300, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6229247589509881219, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
+      propertyPath: trigger
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8176880477895808861, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1892942600}
-    - target: {fileID: 9045082588986914507, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
-      propertyPath: m_Volume
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 9045082590189523554, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 9045082590189523554, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2973,5 +3036,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Broken Bot
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6229247589509881219, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1303bbfd3080d48de9cfed6355d96c7c, type: 3}
