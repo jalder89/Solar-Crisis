@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
 
 public class Door : MonoBehaviour
@@ -38,5 +39,10 @@ public class Door : MonoBehaviour
             doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
         }
+    }
+
+    public void EnterDoor()
+    {
+        SceneManager.LoadScene("MainHall", LoadSceneMode.Single);
     }
 }
