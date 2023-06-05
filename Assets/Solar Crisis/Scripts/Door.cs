@@ -6,13 +6,11 @@ using PixelCrushers.DialogueSystem;
 
 public class Door : MonoBehaviour
 {
-    private Canvas doorUI;
     private Player player;
 
     // Start is called before the first frame update
     void Start()
     {
-        doorUI = gameObject.GetComponentInChildren<Canvas>();
         player = GameObject.Find("Player").GetComponent<Player>();
     }
 
@@ -27,7 +25,6 @@ public class Door : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             player.trigger = gameObject.GetComponent<DialogueSystemTrigger>();
-            doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
         }
     }
@@ -36,7 +33,6 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            doorUI.enabled = !doorUI.enabled;
             player.canInteract = true;
         }
     }
