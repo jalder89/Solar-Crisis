@@ -3403,7 +3403,7 @@ GameObject:
   - component: {fileID: 8967577906367563842}
   - component: {fileID: 8967577906367563845}
   m_Layer: 5
-  m_Name: JRPG Template Standard Dialogue UI
+  m_Name: JRPG Template Standard Dialogue UIold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
