@@ -6,6 +6,7 @@ using PixelCrushers.DialogueSystem;
 
 public class Door : MonoBehaviour
 {
+    [SerializeField] Variable scene;
     private Player player;
 
     // Start is called before the first frame update
@@ -33,12 +34,12 @@ public class Door : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            player.canInteract = true;
+            player.canInteract = false;
         }
     }
 
     public void EnterDoor()
     {
-        SceneManager.LoadScene("MainHall", LoadSceneMode.Single);
+        SceneManager.LoadScene(scene.Name, LoadSceneMode.Single);
     }
 }
