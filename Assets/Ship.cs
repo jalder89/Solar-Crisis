@@ -26,6 +26,6 @@ public class Ship : MonoBehaviour
 
         // move sprite towards the target location
         transform.position = Vector2.MoveTowards(transform.position, target, step);
-        transform.localScale = new Vector3(transform.localScale.x - Time.deltaTime * shrinkSpeed * 2, transform.localScale.y - Time.deltaTime * shrinkSpeed, 1);
+        transform.localScale = new Vector3(transform.localScale.x - Time.deltaTime * shrinkSpeed * 1.5f, transform.localScale.y - Time.deltaTime * shrinkSpeed, 1);
     }
 }

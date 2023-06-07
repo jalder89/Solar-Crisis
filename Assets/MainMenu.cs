@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     private float menuTimer;
-    private float loadTime = 1.6f;
+    private float loadTime = 2.75f;
     private bool playGame = false;
+
+    [SerializeField] private Animator logoAnimator;
 
     private void Update()
     {
@@ -24,6 +26,7 @@ public class MainMenu : MonoBehaviour
     {
         menuTimer = 0;
         playGame = true;
+        logoAnimator.SetBool("GameStart", true);
     }
 
     public void QuitGame()
@@ -35,4 +38,5 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("EntryHall");
     }
+
 }
