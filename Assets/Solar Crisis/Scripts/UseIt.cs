@@ -6,6 +6,8 @@ using PixelCrushers.DialogueSystem;
 public class UseIt : MonoBehaviour
 {
     public DialogueSystemTrigger dialogueTrigger;
+    public DialogueSystemTrigger getCloserBark;
+    public DialogueSystemTrigger powerOnBark;
     public Collider2D triggerCollider;
     public GameObject nameCanvas;
     private Ray mouseRay;
@@ -30,6 +32,17 @@ public class UseIt : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 dialogueTrigger.OnUse();
+
+                if (getCloserBark)
+                {
+                    getCloserBark.OnUse();
+                }
+
+                if (powerOnBark)
+                {
+                    powerOnBark.OnUse();
+                }
+                
             }
         } else
         {
@@ -51,7 +64,7 @@ public class UseIt : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "Player" && nameCanvas)
         {
             nameCanvas.SetActive(true);
         }
@@ -59,7 +72,7 @@ public class UseIt : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Player")
+        if (collision.gameObject.name == "Player" && nameCanvas)
         {
             nameCanvas.SetActive(false);
         }

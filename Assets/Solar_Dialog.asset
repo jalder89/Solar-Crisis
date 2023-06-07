@@ -909,7 +909,35 @@ MonoBehaviour:
       type: 0
       typeString: 
     - title: Initial Value
-      value: false
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 38
+    fields:
+    - title: Name
+      value: Global.CloseEnough
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 39
+    fields:
+    - title: Name
+      value: MainHall.LeftTerminalOn
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
