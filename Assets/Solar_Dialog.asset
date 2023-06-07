@@ -48582,7 +48582,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable[""] == true
+      conditionsString: 
       userScript: 'ShowAlert("Reactor Room Unlocked");
 
         Variable["MainHall.UnlockReactorRoom"]
@@ -48592,8 +48592,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 74
-        y: 220
+        x: 61.62886
+        y: 200.41238
         width: 160
         height: 30
     - id: 2
@@ -48653,8 +48653,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 67
-        y: 323
+        x: 47.41237
+        y: 330.21652
         width: 160
         height: 30
     - id: 3
@@ -49394,7 +49394,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.94000006
+    canvasZoom: 0.97
   - id: 18
     fields:
     - title: Title
@@ -49485,6 +49485,12 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
+      - originConversationID: 18
+        originDialogueID: 0
+        destinationConversationID: 18
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -49519,7 +49525,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Yo.
+        value: Magnetic Field Operational. Quantum Systems Offline.
         type: 0
         typeString: 
       - title: Sequence
@@ -49552,15 +49558,15 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["ReactorRoom.ReactorOn"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 145.60551
-        y: 166.09177
+        x: 75.88075
+        y: 297.28442
         width: 160
         height: 30
     - id: 2
@@ -49602,14 +49608,17 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Variable["ReactorOn"] = true
+      userScript: 'Variable["ReactorOn"] = true;
+
+        ShowAlert("Reactor on.
+        Quantum Communications Online.")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 437.3487
-        y: 203.24771
+        x: 469.45874
+        y: 212.42203
         width: 160
         height: 30
     - id: 3
@@ -49657,8 +49666,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 419.91742
-        y: 284.8991
+        x: 478.63303
+        y: 291.32114
         width: 160
         height: 30
     - id: 4
@@ -49700,14 +49709,84 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: Variable["HasCharlesCode"] == true
-      userScript: Variable["QuantumBotsDisabled"] = true
+      userScript: 'Variable["QuantumBotsDisabled"] = true
+
+        ShowAlert("Robots
+        disconnected from network.")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 417.16513
-        y: 119.76149
+        x: 434.5963
+        y: 117.0092
+        width: 160
+        height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 14
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Magnetic Field Operational. Quantum Systems Online.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 18
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 18
+        originDialogueID: 5
+        destinationConversationID: 18
+        destinationDialogueID: 4
+        isConnector: 0
+        priority: 2
+      - originConversationID: 18
+        originDialogueID: 5
+        destinationConversationID: 18
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      - originConversationID: 18
+        originDialogueID: 5
+        destinationConversationID: 18
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["ReactorRoom.ReactorOn"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 108.4404
+        y: 134.8624
         width: 160
         height: 30
     entryGroups: []
