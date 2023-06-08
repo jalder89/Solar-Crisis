@@ -22,42 +22,48 @@ public class UseIt : MonoBehaviour
 
     private void MouseOverCollider(Ray mouseRay)
     {
-        if (triggerCollider.bounds.IntersectRay(mouseRay))
+        if (!DialogueManager.isConversationActive)
         {
-            if (nameCanvas)
+            if (triggerCollider.bounds.IntersectRay(mouseRay))
             {
-                nameCanvas.SetActive(true);
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                dialogueTrigger.OnUse();
-
-                if (getCloserBark)
+                if (nameCanvas)
                 {
-                    getCloserBark.OnUse();
+                    nameCanvas.SetActive(true);
                 }
 
-                if (powerOnBark)
+                if (Input.GetMouseButtonDown(0))
                 {
-                    powerOnBark.OnUse();
-                }
+                    dialogueTrigger.OnUse();
+
+                    if (getCloserBark)
+                    {
+                        getCloserBark.OnUse();
+                    }
+
+                    if (powerOnBark)
+                    {
+                        powerOnBark.OnUse();
+                    }
                 
-            }
-        } else
-        {
-            if (nameCanvas)
+                }
+            } else
             {
-                nameCanvas.SetActive(false);
+                if (nameCanvas)
+                {
+                    nameCanvas.SetActive(false);
+                }
             }
         }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (Input.GetButtonDown("Interact"))
+        if (!DialogueManager.isConversationActive)
         {
-            dialogueTrigger.OnUse();
+            if (Input.GetButtonDown("Interact"))
+            {
+                dialogueTrigger.OnUse();
+            }
         }
     }
 
