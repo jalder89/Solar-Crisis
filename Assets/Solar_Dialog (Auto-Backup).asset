@@ -42305,6 +42305,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 458dfaed-b965-4ed5-b4a0-40d0e3248075
+        type: 0
+        typeString: 
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -48450,8 +48454,8 @@ MonoBehaviour:
         width: 787.9103
         height: 1254.5665
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 340.8379, y: 1613.3597}
-    canvasZoom: 0.6278645
+    canvasScrollPosition: {x: 398.25836, y: 382.8114}
+    canvasZoom: 0.65786445
   - id: 16
     fields:
     - title: Title

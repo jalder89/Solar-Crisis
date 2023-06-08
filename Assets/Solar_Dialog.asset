@@ -40346,7 +40346,7 @@ MonoBehaviour:
         width: 803.17413
         height: 1033.609
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 69.387695, y: 2039.6206}
+    canvasScrollPosition: {x: 4108.164, y: 1482.4777}
     canvasZoom: 0.48999986
   - id: 15
     fields:
@@ -41062,7 +41062,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: '[em1]The Brain does not respond.][/em1/'
+        value: '[em1]The Brain does not respond.[/em1]'
         type: 4
         typeString: CustomFieldType_Localization
       - title: Parenthetical
@@ -42242,7 +42242,7 @@ MonoBehaviour:
         originDialogueID: 23
         destinationConversationID: 15
         destinationDialogueID: 24
-        isConnector: 1
+        isConnector: 0
         priority: 2
       conditionsString: 
       userScript: 
@@ -42251,8 +42251,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1165.6621
-        y: 1228.2781
+        x: 1167.3347
+        y: 1236.6414
         width: 160
         height: 30
     - id: 24
@@ -42260,7 +42260,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -42268,7 +42268,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 10
         type: 5
@@ -42280,7 +42280,7 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Yes.
         type: 4
@@ -42288,7 +42288,7 @@ MonoBehaviour:
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -42296,15 +42296,19 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Response Menu Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
+      - title: EventGuid
+        value: eedfd1e5-7199-48e9-858d-22b573a96233
+        type: 0
+        typeString: CustomFieldType_Text
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -42314,10 +42318,25 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Variable["BrainRoom.BrainPower"] = true
+      userScript: 'Variable["BrainRoom.BrainPower"] = true;
+
+        Variable["BrainRoom.EntityFirstSighting"]
+        = true'
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 858.7
@@ -43051,8 +43070,8 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: That was a representation of a being from beyond our physical realm
-          of existence.
+        value: That was a vocal representation of a being from beyond our physical
+          realm of existence.
         type: 4
         typeString: CustomFieldType_Localization
       - title: Parenthetical
@@ -43214,7 +43233,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: You have seen proof.
+        value: What you just heard is proof.
         type: 4
         typeString: CustomFieldType_Localization
       - title: Parenthetical
@@ -43270,7 +43289,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1743.424
+        x: 1742.1383
         y: 718.0505
         width: 160
         height: 30
@@ -43432,8 +43451,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1985.1831
-        y: 715.8527
+        x: 1998.0386
+        y: 706.8537
         width: 160
         height: 30
     - id: 39
@@ -45199,7 +45218,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -45207,7 +45226,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 10
         type: 0
@@ -45219,7 +45238,7 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Yes.
         type: 4
@@ -45227,7 +45246,7 @@ MonoBehaviour:
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -45235,19 +45254,19 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Response Menu Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: 0e30c70e-2720-4fb7-bee6-ee56bbd0b7d6
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 15
       isRoot: 0
       isGroup: 0
@@ -45263,8 +45282,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 3312.4265
-        y: 845.6673
+        x: 3316.6118
+        y: 843.57465
         width: 160
         height: 30
     - id: 63
@@ -47080,7 +47099,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 817.0452
+        x: 808.24036
         y: 2634.286
         width: 160
         height: 30
@@ -48517,8 +48536,8 @@ MonoBehaviour:
         width: 787.9103
         height: 1254.5665
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 0, y: 1014.8456}
-    canvasZoom: 0.6278645
+    canvasScrollPosition: {x: 1952.2351, y: 539.94006}
+    canvasZoom: 0.7778643
   - id: 16
     fields:
     - title: Title
@@ -48630,12 +48649,6 @@ MonoBehaviour:
       - originConversationID: 16
         originDialogueID: 0
         destinationConversationID: 16
-        destinationDialogueID: 1
-        isConnector: 0
-        priority: 2
-      - originConversationID: 16
-        originDialogueID: 0
-        destinationConversationID: 16
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
@@ -48650,88 +48663,12 @@ MonoBehaviour:
         y: 50
         width: 160
         height: 30
-    - id: 1
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: 
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: 
-      - title: Actor
-        value: 6
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 1
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: 
-      - title: Dialogue Text
-        value: LEAVE!
-        type: 4
-        typeString: CustomFieldType_Localization
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: 
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: 
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: Response Menu Sequence
-        value: 
-        type: 0
-        typeString: 
-      - title: EventGuid
-        value: c64f3443-a990-445f-8967-dd30d0e57702
-        type: 0
-        typeString: 
-      conversationID: 16
-      isRoot: 0
-      isGroup: 0
-      nodeColor: White
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 'Variable["BrainRoom.BrainPower"] = false;
-
-        Variable["BrainRoom.EntityFirstSighting"]
-        = true'
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 80.39755
-        y: 137.58409
-        width: 160
-        height: 30
     - id: 2
       fields:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -48739,7 +48676,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 6
         type: 5
@@ -48751,7 +48688,7 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Please leave.
         type: 4
@@ -48759,7 +48696,7 @@ MonoBehaviour:
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -48767,15 +48704,15 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Response Menu Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -48796,14 +48733,14 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Variable["BrainRoom.Entity2"] = true
+      conditionsString: Variable["BrainRoom.EntityFirstSighting"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 684.3503
+        x: 686.2406
         y: 110.09696
         width: 160
         height: 30
@@ -48878,8 +48815,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 424.17075
-        y: 133.8293
+        x: 438.71017
+        y: 169.37007
         width: 160
         height: 30
     - id: 4
@@ -48959,8 +48896,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 388.6511
-        y: 213.30103
+        x: 433.88483
+        y: 239.14886
         width: 160
         height: 30
     - id: 5
@@ -50229,11 +50166,11 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -50245,19 +50182,19 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: I'm not sure what to do here, I need to talk to command. <em1>leave</em1>
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: EventGuid
         value: a7ffb630-bac4-4137-b21f-1e99ccaa44b8
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 16
       isRoot: 0
       isGroup: 0
@@ -51634,7 +51571,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.40900725
+    canvasZoom: 0.52900726
   - id: 17
     fields:
     - title: Title
