@@ -1008,6 +1008,34 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 43
+    fields:
+    - title: Name
+      value: MainHall.ReactorDoor.CloseEnough
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+  - id: 44
+    fields:
+    - title: Name
+      value: MainHall.BrainDoor.CloseEnough
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:

@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
+using System.Runtime.InteropServices;
 
 public class Door : MonoBehaviour
 {
     [SerializeField] Object sceneToLoad;
+    [SerializeField] private GameObject image;
+    [SerializeField] private Animator imageAnimator;
+
     private Player player;
+    private float timer;
+    private bool transition;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +24,12 @@ public class Door : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
 
+        if (transition && timer >= 1)
+        {
+            EnterDoor();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,6 +51,15 @@ public class Door : MonoBehaviour
 
     public void EnterDoor()
     {
-        SceneManager.LoadScene(sceneToLoad.name, LoadSceneMode.Single);
+        transition = false;
+        SceneManager.LoadSceneAsync(sceneToLoad.name);
+    }
+
+    public void Transition()
+    {
+        transition = true;
+        timer = 0;
+        image.SetActive(true);
+        imageAnimator.SetTrigger("End");
     }
 }

@@ -3003,6 +3003,174 @@ Transform:
   m_Father: {fileID: 1793351211}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1224635207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2668716888824140047, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: luaCode
+      value: Variable["MainHall.BrainDoor.CloseEnough"] = true
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barker
+      value: 
+      objectReference: {fileID: 1749273484}
+    - target: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.BrainDoor.CloseEnough"] == false
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318225276720990928, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: luaCode
+      value: Variable["MainHall.BrainDoor.CloseEnough"] = false
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barkText
+      value: 'Brain Room: Locked'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.BrainRoomUnlocked"] == false
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barkText
+      value: 'Brain Room: Unlocked'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.BrainRoomUnlocked"] == true
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155575, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.x
+      value: 5.6429462
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155575, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.y
+      value: 7.44894
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155575, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5525923
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155575, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.y
+      value: -3.99665
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694017, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: getCloserBark
+      value: 
+      objectReference: {fileID: 1224635208}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.BrainRoomUnlocked"] == true
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[1]
+      value: Variable["MainHall.BrainDoor.CloseEnough"] == true
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.x
+      value: 5.8279257
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.y
+      value: 7.5539026
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5913987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.10123479
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 786910553}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: sceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: 6a22e14744c2d4a5ab4a3869935a6a7e, type: 3}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: imageAnimator
+      value: 
+      objectReference: {fileID: 786910556}
+    - target: {fileID: 8870588260032694022, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Name
+      value: Brain Door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+--- !u!114 &1224635208 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+  m_PrefabInstance: {fileID: 1224635207}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1388990617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9175021098764308579, guid: 782c68df8f5b44e24a107d52a8907c03, type: 3}
@@ -4431,6 +4599,7 @@ Transform:
   - {fileID: 1692229927}
   - {fileID: 1402590915}
   - {fileID: 3310280724351288626}
+  - {fileID: 2107086997}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5122,6 +5291,155 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6496442046937498682, guid: 802919e4f346a4a41a22ba70dc21183b, type: 3}
   m_PrefabInstance: {fileID: 2086208204}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2107086996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1955851622}
+    m_Modifications:
+    - target: {fileID: 3403493481284669770, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_text
+      value: Reactor Room
+      objectReference: {fileID: 0}
+    - target: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barker
+      value: 
+      objectReference: {fileID: 1749273484}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barkText
+      value: 'Reactor Room: Locked'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155337, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.UnlockReactorRoom"] == false
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: barkText
+      value: 'Reactor Room: Unlocked'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588259821155574, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.UnlockReactorRoom"] == true
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694017, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: getCloserBark
+      value: 
+      objectReference: {fileID: 2107086998}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: condition.luaConditions.Array.data[0]
+      value: Variable["MainHall.UnlockReactorRoom"] == true
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Transition
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -17.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.x
+      value: 6.798765
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Size.y
+      value: 7.5179453
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.5772028
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694020, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Offset.y
+      value: 1.2831092
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: image
+      value: 
+      objectReference: {fileID: 786910553}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: sceneToLoad
+      value: 
+      objectReference: {fileID: 102900000, guid: d28945b61de3f4193a86c72c318e829a, type: 3}
+    - target: {fileID: 8870588260032694021, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: imageAnimator
+      value: 
+      objectReference: {fileID: 786910556}
+    - target: {fileID: 8870588260032694022, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_Name
+      value: Reactor Door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+--- !u!4 &2107086997 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+  m_PrefabInstance: {fileID: 2107086996}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2107086998 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+  m_PrefabInstance: {fileID: 2107086996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2136818813
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,7 +5792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5424558944570149210, guid: f418ca4a89a3068448f0290ee34878a6, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86.61931
+      value: 86.619286
       objectReference: {fileID: 0}
     - target: {fileID: 5424558944964167060, guid: f418ca4a89a3068448f0290ee34878a6, type: 3}
       propertyPath: m_AnchorMax.x
