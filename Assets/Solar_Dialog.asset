@@ -49485,7 +49485,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 0, y: 122.6803}
     canvasZoom: 0.97
   - id: 18
     fields:
@@ -49691,6 +49691,10 @@ MonoBehaviour:
         value: 
         type: 0
         typeString: 
+      - title: EventGuid
+        value: 6510e945-0491-4df1-900c-89906214eba3
+        type: 0
+        typeString: 
       conversationID: 18
       isRoot: 0
       isGroup: 0
@@ -49700,10 +49704,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 'Variable["ReactorOn"] = true;
+      userScript: 'Variable["ReactorRoom.ReactorOn"] = true;
 
-        ShowAlert("Reactor on.
-        Quantum Communications Online.")'
+        ShowAlert("Reactor
+        on. Quantum Communications Online.")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -49882,7 +49886,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 14.300894, y: 19.6608}
+    canvasScrollPosition: {x: 29.897207, y: 70.11952}
     canvasZoom: 1.0899999
   - id: 19
     fields:
