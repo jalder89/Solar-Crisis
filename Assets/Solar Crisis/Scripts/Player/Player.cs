@@ -11,8 +11,8 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     public float velocity;
 
-    public int facingDir { get; private set; } = 1;
-    private bool facingRight = true;
+    public int facingDir { get; set; } = 1;
+    public bool facingRight = true;
 
     public bool canType = false;
     public bool canInteract = false;
@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
     public PlayerIdleState idleState { get; private set; }
     public PlayerMoveState moveState { get; private set; }
+    public PlayerMoveState moveLeftState { get; private set; }
     public PlayerInteractState interactState { get; private set; }
     public PlayerTypingState typingState { get; private set; }
     #endregion
@@ -41,13 +42,14 @@ public class Player : MonoBehaviour
 
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
+        moveLeftState = new PlayerMoveState(this, stateMachine, "Move");
         interactState = new PlayerInteractState(this, stateMachine, "Interact");
         typingState = new PlayerTypingState(this, stateMachine, "Typing");
     }
 
     private void OnEnable()
     {
-        SceneManager.sceneLoaded += OnSceneLoaded;        
+        //SceneManager.sceneLoaded += OnSceneLoaded;        
     }
 
     private void Start()
@@ -68,34 +70,35 @@ public class Player : MonoBehaviour
     public void SetVelocity(float _xVelocity, float _yVelocity)
     {
         rb.velocity = new Vector2(_xVelocity, _yVelocity);
-        FlipController(_xVelocity);
+        //FlipController(_xVelocity);
     }
 
-    public void Flip()
-    {
-        facingDir = facingDir * -1;
-        facingRight = !facingRight;
-        transform.Rotate(0, 180, 0);
-    }
+    //public void Flip()
+    //{
+    //    facingDir = facingDir * -1;
+    //    facingRight = !facingRight;
+    //    transform.Rotate(0, 180, 0);
+    //}
 
-    public void FlipController(float _x)
-    {
-        if (_x > 0 && !facingRight)
-        {
-            Flip();
-        }
-        else if (_x < 0 && facingRight)
-        {
-            Flip();
-        }
-    }
+    //public void FlipController(float _x)
+    //{
+    //    if (_x > 0 && !facingRight)
+    //    {
+    //        Flip();
+    //    }
+    //    else if (_x < 0 && facingRight)
+    //    {
+    //        Flip();
+    //    }
+    //}
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        if (transform.rotation.y == 1)
-        {
-            facingDir = facingDir * -1;
-            facingRight = !facingRight;
-        }
-    }
+    //void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (transform.rotation.y == 1 || transform.rotation.y == -1)
+    //    {
+    //        Debug.Log("Correcting Left Face");
+    //        facingDir = -1;
+    //        facingRight = false;
+    //    }
+    //}
 }

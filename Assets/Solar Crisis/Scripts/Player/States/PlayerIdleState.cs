@@ -28,7 +28,17 @@ public class PlayerIdleState : PlayerState
 
         if (xInput != 0)
         {
-            stateMachine.ChangeState(player.moveState);
+            if (xInput > 0)
+            {
+                stateMachine.ChangeState(player.moveState);
+                player.transform.rotation = new Quaternion(0, 0, 0, 0);
+            }
+
+            if (xInput < 0)
+            {
+                stateMachine.ChangeState(player.moveLeftState);
+                player.transform.rotation = new Quaternion(0, 180, 0, 0);
+            }
         }
 
         if (Input.GetButtonDown("Interact") && player.canInteract)
