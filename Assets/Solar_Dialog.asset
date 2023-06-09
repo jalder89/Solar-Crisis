@@ -1064,6 +1064,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 47
+    fields:
+    - title: Name
+      value: MainHall.CharlesAlive
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -2470,14 +2484,14 @@ MonoBehaviour:
         priority: 2
       conditionsString: Variable["cruel"] == false and (Variable["MainHall.CharlesFixed"]
         == true)
-      userScript: 
+      userScript: Variable["MainHall.CharlesAlive"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 137.5464
-        y: 166.93814
+        x: 154.68925
+        y: 159.79529
         width: 160
         height: 30
     - id: 2
@@ -2526,14 +2540,14 @@ MonoBehaviour:
         priority: 2
       conditionsString: Variable["ReactorOn"] == false and (Variable["cruel"] ==
         false) and (Variable["MainHall.CharlesFixed"] == true)
-      userScript: 
+      userScript: Variable["MainHall.CharlesAlive"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 405.03238
-        y: 157.45297
+        x: 492.17523
+        y: 147.45294
         width: 160
         height: 30
     - id: 3
@@ -6061,7 +6075,7 @@ MonoBehaviour:
         priority: 2
       conditionsString: Variable["Liar"] == true and (Variable["Dead"] == false)
         and (Variable["MainHall.CharlesFixed"] == true)
-      userScript: 
+      userScript: Variable["MainHall.CharlesAlive"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -17686,14 +17700,14 @@ MonoBehaviour:
         priority: 2
       conditionsString: Variable["Dead"] == true and (Variable["MainHall.CharlesFixed"]
         == true)
-      userScript: 
+      userScript: Variable["MainHall.CharlesAlive"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1325.6887
-        y: 81.69737
+        x: 1305.6887
+        y: 97.41165
         width: 160
         height: 30
     - id: 277
@@ -20436,8 +20450,8 @@ MonoBehaviour:
         width: 483.5
         height: 231.00006
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 0, y: 194.73682}
-    canvasZoom: 0.18999997
+    canvasScrollPosition: {x: 6068.5737, y: 0}
+    canvasZoom: 0.6999998
   - id: 4
     fields:
     - title: Title
@@ -39145,23 +39159,21 @@ MonoBehaviour:
       - originConversationID: 14
         originDialogueID: 172
         destinationConversationID: 14
-        destinationDialogueID: 199
+        destinationDialogueID: 202
         isConnector: 0
         priority: 2
       conditionsString: 
       userScript: 'Variable["End.BleedingHeart"] = true;
 
-        ShowAlert("I loaded
-        the robots into my ship and left. The brain blew the place once we left.
-        I''m currently living off the grid, playing tabletop games with the robots,
-        and having a nice life.")'
+        ShowAlert("Bleeding
+        Heart & a Peaceful Life")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 5393.0728
-        y: 2133.25
+        x: 5402.4478
+        y: 2162.9375
         width: 160
         height: 30
     - id: 173
@@ -39261,19 +39273,14 @@ MonoBehaviour:
       - originConversationID: 14
         originDialogueID: 174
         destinationConversationID: 14
-        destinationDialogueID: 199
+        destinationDialogueID: 201
         isConnector: 0
         priority: 2
       conditionsString: 
       userScript: 'Variable["End.CorporateBootLicker"] = true;
 
-        ShowAlert("I
-        never saw this cockpit again. I''m stuck inside. We did trap the entity,
-        but it seems the magnetic field separated it from it''s power source and
-        it seems to be dead. Anyway, doing this completely destroyed the entry hall
-        and the ship. I only have a few rations left and it won''t be possible for
-        them to repair the station in time to save me. I will die knowing that I
-        betrayed science in order to help a heartless megacorporation.")'
+        ShowAlert("You
+        Corporate Boot-Licker!")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -39328,17 +39335,14 @@ MonoBehaviour:
       - originConversationID: 14
         originDialogueID: 175
         destinationConversationID: 14
-        destinationDialogueID: 199
+        destinationDialogueID: 200
         isConnector: 0
         priority: 2
       conditionsString: 
       userScript: 'Variable["End.TellThePeople"] = true;
 
-        ShowAlert("I left
-        the station in tact, flew out, and contacted the press. News spread about
-        the enty, the brain, and the lonely robots. An investigation was launched
-        and many governments came together to discuss what to do about this situation.
-        The robots are still lonely.")'
+        ShowAlert("You
+        Tell The World")'
       onExecute:
         m_PersistentCalls:
           m_Calls:
@@ -39356,8 +39360,8 @@ MonoBehaviour:
             m_CallState: 2
       canvasRect:
         serializedVersion: 2
-        x: 5398.2295
-        y: 1979.1934
+        x: 5399.792
+        y: 1954.1932
         width: 160
         height: 30
     - id: 176
@@ -40613,7 +40617,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 5
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -40637,6 +40641,236 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 14
+        originDialogueID: 199
+        destinationConversationID: 14
+        destinationDialogueID: 203
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 6293.543
+        y: 2018.2559
+        width: 160
+        height: 30
+    - id: 200
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I left the station in tact, flew out, and contacted the press. News
+          spread about the enty, the brain, and the lonely robots. An investigation
+          was launched and many governments came together to discuss what to do about
+          this situation. The robots are still lonely.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 14
+        originDialogueID: 200
+        destinationConversationID: 14
+        destinationDialogueID: 199
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 5923.23
+        y: 1904.1932
+        width: 160
+        height: 30
+    - id: 201
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I never saw this cockpit again. I'm stuck inside. We did trap the
+          entity, but it seems the magnetic field separated it from it's power source
+          and it seems to be dead. Anyway, doing this completely destroyed the entry
+          hall and the ship. I only have a few rations left and it won't be possible
+          for them to repair the station in time to save me. I will die knowing that
+          I betrayed science in order to help a heartless megacorporation.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 14
+        originDialogueID: 201
+        destinationConversationID: 14
+        destinationDialogueID: 199
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 5938.081
+        y: 2045.1624
+        width: 160
+        height: 30
+    - id: 202
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I loaded the robots into my ship and left. The brain blew the place
+          once we left. I'm currently living off the grid, playing tabletop games
+          with the robots, and having a nice life.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 14
+        originDialogueID: 202
+        destinationConversationID: 14
+        destinationDialogueID: 199
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 5935.2607
+        y: 2189.5
+        width: 160
+        height: 30
+    - id: 203
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Don't forget to leave feedback. You are all awesome!
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 14
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
       userScript: 
@@ -40645,8 +40879,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6145.1055
-        y: 2044.8184
+        x: 6574.793
+        y: 2019.8184
         width: 160
         height: 30
     entryGroups:
@@ -40706,8 +40940,8 @@ MonoBehaviour:
         width: 803.17413
         height: 1033.609
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 4183.423, y: 1541.8555}
-    canvasZoom: 0.63999975
+    canvasScrollPosition: {x: 2467.9067, y: 964.04285}
+    canvasZoom: 0.36999986
   - id: 15
     fields:
     - title: Title
@@ -52495,17 +52729,17 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["HasCharlesCode"] == true
-      userScript: 'ShowAlert["Quantum Robots Disconnected From Network"];
+      userScript: 'Variable["QuantumBotsDisabled"] = true;
 
-        Variable["QuantumBotsDisabled"]
-        = true'
+        ShowAlert("Quantum
+        Robots Disconnected From Network")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 346.13422
-        y: 477.54944
+        x: 1221.8481
+        y: 751.835
         width: 160
         height: 30
     - id: 16
