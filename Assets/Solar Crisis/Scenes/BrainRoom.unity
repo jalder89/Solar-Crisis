@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2335639172730597004, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86.61906
+      value: 86.619225
       objectReference: {fileID: 0}
     - target: {fileID: 2335639172815210015, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -384,6 +384,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
+--- !u!1 &13818587 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2335639171296167300, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
+  m_PrefabInstance: {fileID: 13818586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &13818588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13818587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64318a909173d4647b185b48389651a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultStartingLevel: 
+  useAsyncLoad: 1
 --- !u!1 &29619383
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,7 +652,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150814962}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59658813, y: -0.5869198, z: -10}
+  m_LocalPosition: {x: -0.6033478, y: -0.5869198, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
