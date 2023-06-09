@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Solar Crisis/Scenes/Start.unity
     guid: b6bb2eb8509e84408aa98a3d11c27f42
   - enabled: 1
+    path: Assets/Solar Crisis/Scenes/ShipCockpit.unity
+    guid: 73c76f46057f343438bb887a5d4c8731
+  - enabled: 1
     path: Assets/Solar Crisis/Scenes/EntryHall.unity
     guid: c6345a6adffd34dcf8e1b99356efd0ad
   - enabled: 1
@@ -20,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Solar Crisis/Scenes/BrainRoom.unity
     guid: 6a22e14744c2d4a5ab4a3869935a6a7e
+  - enabled: 1
+    path: Assets/Solar Crisis/Scenes/ShipCockpitEnding.unity
+    guid: b9208bc99b5623146af34e1768320759
   m_configObjects: {}

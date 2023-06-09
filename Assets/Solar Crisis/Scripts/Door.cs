@@ -10,15 +10,15 @@ public class Door : MonoBehaviour
     [SerializeField] Object sceneToLoad;
     [SerializeField] private GameObject image;
     [SerializeField] private Animator imageAnimator;
+    [SerializeField] private Player player;
 
-    private Player player;
     private float timer;
     private bool transition;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
+
     }
 
     // Update is called once per frame

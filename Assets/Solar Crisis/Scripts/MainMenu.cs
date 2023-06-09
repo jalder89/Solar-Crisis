@@ -44,7 +44,7 @@ public class MainMenu : MonoBehaviour
 
     private void LoadScene()
     {
-        SceneManager.LoadSceneAsync("EntryHall");
+        SceneManager.LoadSceneAsync("ShipCockpit");
     }
 
 }

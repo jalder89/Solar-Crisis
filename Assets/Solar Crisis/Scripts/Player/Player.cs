@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -44,6 +45,11 @@ public class Player : MonoBehaviour
         typingState = new PlayerTypingState(this, stateMachine, "Typing");
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;        
+    }
+
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -81,6 +87,15 @@ public class Player : MonoBehaviour
         else if (_x < 0 && facingRight)
         {
             Flip();
+        }
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (transform.rotation.y == 1)
+        {
+            facingDir = facingDir * -1;
+            facingRight = !facingRight;
         }
     }
 }
