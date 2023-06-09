@@ -9,7 +9,7 @@ public class TerminalAnimEvents : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
 
     }
 

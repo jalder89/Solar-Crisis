@@ -19,7 +19,7 @@ public class Door : MonoBehaviour
 
     private void Awake()
     {
-        levelManager = DialogueManager.Instance.GetComponent<LevelManager>();
+        //levelManager = DialogueManager.Instance.GetComponent<LevelManager>();
     }
 
     // Start is called before the first frame update
@@ -59,7 +59,7 @@ public class Door : MonoBehaviour
     public void EnterDoor()
     {
         transition = false;
-        levelManager.LoadLevel(sceneToLoad.name);
+        //levelManager.LoadLevel(sceneToLoad.name);
     }
 
     public void Transition()

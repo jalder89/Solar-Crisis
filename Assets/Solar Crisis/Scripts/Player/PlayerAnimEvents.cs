@@ -6,11 +6,13 @@ using PixelCrushers.DialogueSystem;
 public class PlayerAnimEvents : MonoBehaviour
 {
     private Player player;
+    private Animator anim;
     public Terminal terminal;
 
     private void Start()
     {
-        player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        anim = player.anim;
     }
     public void TypingComplete()
     {
@@ -25,7 +27,7 @@ public class PlayerAnimEvents : MonoBehaviour
             player.canType = true;
             player.canInteract = false;
             // terminal.anim.SetBool("PowerOn", true);
-            player.anim.SetBool("Interact", false);
+            anim.SetBool("Interact", false);
             player.stateMachine.ChangeState(player.idleState);
         } else
         {
@@ -43,8 +45,8 @@ public class PlayerAnimEvents : MonoBehaviour
 
     public void CleanGlassesEnd()
     {
-        player.anim.SetBool("IdleLong", false);
-        player.anim.SetBool("Idle", true);
+        anim.SetBool("IdleLong", false);
+        anim.SetBool("Idle", true);
         player.idleTimer = 0;
     }
 }

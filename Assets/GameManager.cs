@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using PixelCrushers.DialogueSystem;
+using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
-    private GameObject player;
+    [SerializeField] private GameObject player;
+    [SerializeField] private Transform firstSpawn;
 
+    private CinemachineVirtualCamera vcam;
     private string previousSceneName;
     private Player playerScript;
 
     private void Awake()
     {
-        //DontDestroyOnLoad(this.gameObject);
+        Debug.Log("Game Manager Awake");
+        DontDestroyOnLoad(this.gameObject);
         SceneManager.sceneUnloaded += OnSceneUnloaded;
         SceneManager.sceneLoaded += OnSceneLoad;
     }
@@ -32,8 +36,14 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoad(Scene scene, LoadSceneMode mode)
     {
         Debug.Log("Previous scene name: " + previousSceneName);
+        if(scene.name != "Start" || scene.name != "ShipCockpit")
+        {
+            ManagePlayerSpawn();
+        }
+
         GetPlayer();
-        ManagePlayerSpawn();
+        vcam = GameObject.FindGameObjectWithTag("VirtualCam").GetComponent<CinemachineVirtualCamera>();
+        vcam.Follow = player.transform;
     }
 
     private void OnSceneUnloaded(Scene scene)
@@ -41,27 +51,31 @@ public class GameManager : MonoBehaviour
         previousSceneName = scene.name;
     }
 
-    private void GetPlayer()
-    {
-        player = GameObject.Find("Player");
-        playerScript = player.GetComponent<Player>();
-    }
-
     #region Player Spawning
     private void ManagePlayerSpawn()
     {
-        ManagePlayerSpawnDirection();
+        if (GameObject.FindGameObjectWithTag("Player") == null)
+        {
+            Instantiate(player);
+            GetPlayer();
+            ManagePlayerInitialTransform();
+        }
+
+        
     }
 
-    private void ManagePlayerSpawnDirection()
+    private void GetPlayer()
     {
-        Debug.Log("Checking rotation");
-        if (player.transform.rotation.y == 1 || player.transform.rotation.y == -1)
-        {
-            Debug.Log("Correcting");
-            playerScript.facingDir = -1;
-            playerScript.facingRight = false;
-        }
+        Debug.Log("Getting Player in Game Manager");
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerScript = player.GetComponent<Player>();
+    }
+
+    private void ManagePlayerInitialTransform()
+    {
+        Debug.Log("Adjusting position and rotation");
+        player.transform.position = firstSpawn.position;
+        player.transform.Rotate(0, 180, 0);
     }
     #endregion
 }
