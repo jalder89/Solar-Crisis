@@ -395,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190783456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.58967, y: -0.89470005, z: -10}
+  m_LocalPosition: {x: -11.588314, y: -0.89470005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1446,6 +1446,59 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: e1a95231f7ad04847b43da31241f36c1, type: 2}
+--- !u!114 &481487523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182802378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c5c9d31be71b548ac8cae1c6fd515c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 182802378}
+  condition:
+    luaConditions:
+    - Variable["MainHall.CharlesAlive"] == false
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects:
+    - {fileID: 182802378}
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  checkOnStart: 0
+--- !u!114 &481487524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182802378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c84023fc44c364faaf12f00d75e52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideActorName: 
+  recordCurrentLevel: 0
+  restoreCurrentLevelPosition: 1
+--- !u!114 &481487525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182802378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaad4ebbb882ed54e9a0d279c8e464c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordOn: 1
+  variableName: 
+  spawnWhenDestroyed: {fileID: 1692229926}
 --- !u!1 &594093807
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,6 +1862,11 @@ PrefabInstance:
 --- !u!4 &715473718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4753929171159064631, guid: a2f0c0f620e304022ace757375fa5e3d, type: 3}
+  m_PrefabInstance: {fileID: 715473717}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &715473719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4753929171159064633, guid: a2f0c0f620e304022ace757375fa5e3d, type: 3}
   m_PrefabInstance: {fileID: 715473717}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &770693285
@@ -3643,12 +3701,46 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4753929171159064630, guid: a2f0c0f620e304022ace757375fa5e3d, type: 3}
   m_PrefabInstance: {fileID: 715473717}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 715473719}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c410edfea44784eacaee248fbfd57700, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1587464519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715473719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c84023fc44c364faaf12f00d75e52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideActorName: 
+  recordCurrentLevel: 1
+  restoreCurrentLevelPosition: 1
+--- !u!114 &1587464520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715473719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af33a602e20a3d4ca46c8a6ef942618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  m_target: {fileID: 715473718}
+  m_usePlayerSpawnpoint: 0
+  m_multiscene: 1
 --- !u!1 &1588996695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,6 +3759,7 @@ GameObject:
   - component: {fileID: 1588996704}
   - component: {fileID: 1588996703}
   - component: {fileID: 1588996702}
+  - component: {fileID: 1588996706}
   m_Layer: 0
   m_Name: CenterTerminal
   m_TagString: Untagged
@@ -4155,6 +4248,27 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: e1a95231f7ad04847b43da31241f36c1, type: 2}
+--- !u!114 &1588996706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588996695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c5c9d31be71b548ac8cae1c6fd515c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1588996695}
+  condition:
+    luaConditions: []
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects: []
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  checkOnStart: 0
 --- !u!1 &1651199435 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6496442046937498682, guid: 802919e4f346a4a41a22ba70dc21183b, type: 3}
@@ -4177,6 +4291,8 @@ GameObject:
   - component: {fileID: 1692229930}
   - component: {fileID: 1692229929}
   - component: {fileID: 1692229928}
+  - component: {fileID: 1692229931}
+  - component: {fileID: 1692229932}
   m_Layer: 0
   m_Name: Charles
   m_TagString: Untagged
@@ -4318,6 +4434,44 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: e1a95231f7ad04847b43da31241f36c1, type: 2}
+--- !u!114 &1692229931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692229926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c5c9d31be71b548ac8cae1c6fd515c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1692229926}
+  condition:
+    luaConditions:
+    - Variable["MainHall.CharlesAlive"] == true
+    questConditions: []
+    acceptedTags: []
+    acceptedGameObjects:
+    - {fileID: 1692229926}
+    luaWizardIndex: -1
+    lastEvaluationValue: 0
+  checkOnStart: 0
+--- !u!114 &1692229932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692229926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42c84023fc44c364faaf12f00d75e52f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overrideActorName: 
+  recordCurrentLevel: 0
+  restoreCurrentLevelPosition: 1
 --- !u!1 &1706277418
 GameObject:
   m_ObjectHideFlags: 0
@@ -5654,6 +5808,97 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
+--- !u!1 &2335639171836569283 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2335639171296167300, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
+  m_PrefabInstance: {fileID: 2335639171836569282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2335639171836569284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335639171836569283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7a2840b06cde3b479416623b4d15788, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startMessage: Press Escape for Menu
+  menuKey: 27
+  guiSkin: {fileID: 11400000, guid: dbe874f440d0cf84cb5c28fd70e8123c, type: 2}
+  closeWhenQuestLogOpen: 1
+  lockCursorDuringPlay: 0
+  onOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  onClose:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2335639171836569285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335639171836569283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc03036aad05c334eab057a96938959a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_version: 0
+  m_saveCurrentScene: 1
+  m_framesToWaitBeforeApplyData: 0
+  m_debug: 0
+--- !u!114 &2335639171836569286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335639171836569283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fbafe64f40b0694b8d4ec9c082f8bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_prettyPrint: 0
+--- !u!114 &2335639171836569287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335639171836569283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4d3f2fce70b2441bd76f6c5777e8ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerPrefsKeyBase: Save
+  encrypt: 0
+  encryptionPassword: My Password
+  m_debug: 0
+--- !u!114 &2335639171836569288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335639171836569283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689b4b1238e337d4590a91183947bcd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_key: 
+  m_appendSaverTypeToKey: 0
+  m_saveAcrossSceneChanges: 1
+  m_restoreStateOnStart: 0
+  skipApplyDataAfterFramesIfApplyImmediate: 1
+  saveRawData: 0
 --- !u!4 &3310280724351288626 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6247849771382395205, guid: e3c75fe9d86834c23a5303a03476bc3a, type: 3}
