@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2335639172730597004, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 86.619225
+      value: 86.61931
       objectReference: {fileID: 0}
     - target: {fileID: 2335639172815210015, guid: 92c4bfe22c2ad4c90a977c2fc54383fc, type: 3}
       propertyPath: m_AnchorMax.y
@@ -746,12 +746,32 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: sequence
+      value: LoadLevel(MainHall, FromBrain)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
       propertyPath: condition.luaConditions.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
       propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Transition
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8870588260032694018, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: onExecute.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8870588260032694019, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
       propertyPath: m_RootOrder
