@@ -27419,7 +27419,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(EntryHall)
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -27639,7 +27639,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: LoadLevel(EntryHall)
         type: 0
         typeString: CustomFieldType_Text
       - title: EventGuid
@@ -27666,8 +27666,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 321.5031}
-    canvasZoom: 0.7185
+    canvasScrollPosition: {x: 0, y: 1244.6462}
+    canvasZoom: 0.71400017
   - id: 6
     fields:
     - title: Title

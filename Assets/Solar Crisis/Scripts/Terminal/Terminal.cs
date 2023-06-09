@@ -17,7 +17,7 @@ public class Terminal : MonoBehaviour
     void Start()
     {
         terminalUI = gameObject.GetComponentInChildren<Canvas>();
-        player = GameObject.Find("Player").GetComponent<Player>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         anim = gameObject.GetComponentInChildren<Animator>();
         isPowerOn = false;
     }

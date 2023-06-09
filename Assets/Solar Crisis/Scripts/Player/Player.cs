@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         stateMachine = new PlayerStateMachine();
-
+        DontDestroyOnLoad(this.gameObject);
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         moveLeftState = new PlayerMoveState(this, stateMachine, "Move");
