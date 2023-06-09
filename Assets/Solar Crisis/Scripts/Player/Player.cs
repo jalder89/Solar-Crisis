@@ -92,10 +92,11 @@ public class Player : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (transform.rotation.y == 1)
+        if (transform.rotation.y == 1 || transform.rotation.y == -1)
         {
-            facingDir = facingDir * -1;
-            facingRight = !facingRight;
+            Debug.Log("Correcting Left Face");
+            facingDir = -1;
+            facingRight = false;
         }
     }
 }
