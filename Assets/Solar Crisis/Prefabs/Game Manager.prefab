@@ -44,3 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15f896aa639cf47998c9169d51429206, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  firstSpawn: {fileID: 0}
+  audioManagerSource: {fileID: 4049824205240843598, guid: a5bbb4558987e41df81985009eabb0b4, type: 3}
+  brainRoomBGM: {fileID: 8300000, guid: 34d07ce7ffb70094b8c03ac9b62fae38, type: 3}
+  normalBGM: {fileID: 8300000, guid: 5775bc5f9e8fe3041a18cbb7287d2760, type: 3}

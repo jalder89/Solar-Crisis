@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private Transform firstSpawn;
+    [SerializeField] private AudioSource audioManagerSource;
+    [SerializeField] private AudioClip brainRoomBGM;
+    [SerializeField] private AudioClip normalBGM;
 
     private CinemachineVirtualCamera vcam;
     private string previousSceneName;
@@ -44,6 +47,20 @@ public class GameManager : MonoBehaviour
         GetPlayer();
         vcam = GameObject.FindGameObjectWithTag("VirtualCam").GetComponent<CinemachineVirtualCamera>();
         vcam.Follow = player.transform;
+
+        if (scene.name == "BrainRoom")
+        {
+            audioManagerSource.Stop();
+            audioManagerSource.clip = brainRoomBGM;
+            audioManagerSource.Play();
+        }
+
+        if (scene.name == "MainHall" && previousSceneName == "BrainRoom")
+        {
+            audioManagerSource.Stop();
+            audioManagerSource.clip = normalBGM;
+            audioManagerSource.Play();
+        }
     }
 
     private void OnSceneUnloaded(Scene scene)
