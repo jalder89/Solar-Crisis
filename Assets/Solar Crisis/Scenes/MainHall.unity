@@ -395,7 +395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190783456}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.588314, y: -0.89470005, z: -10}
+  m_LocalPosition: {x: -11.5947275, y: -0.89470005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3780,6 +3780,10 @@ PrefabInstance:
       propertyPath: luaCode
       value: Variable["MainHall.BrainDoor.CloseEnough"] = true
       objectReference: {fileID: 0}
+    - target: {fileID: 3403493481284669770, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
+      propertyPath: m_text
+      value: Brain Room
+      objectReference: {fileID: 0}
     - target: {fileID: 5009338333850387588, guid: be795544ba7d64feca5b321642a15bf0, type: 3}
       propertyPath: barker
       value: 
@@ -6152,7 +6156,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955851621}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5775bc5f9e8fe3041a18cbb7287d2760, type: 3}
