@@ -1078,6 +1078,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: 
+  - id: 48
+    fields:
+    - title: Name
+      value: ShipCockpit.ClosedComms
+      type: 0
+      typeString: 
+    - title: Initial Value
+      value: false
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
   conversations:
   - id: 1
     fields:
@@ -20476,7 +20490,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I left the station in tact, flew out, and contacted the press. News
+        value: You left the station in tact, flew out, and contacted the press. News
           spread about the entity, the brain, and the lonely robots. An investigation
           was launched and many governments came together to discuss what to do about
           this situation. The robots are still lonely.
@@ -20534,10 +20548,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: The End. I took the robots and left. The brain decided to disabled
-          the magnetic field and the sun swallowed it. I'm currently living off the
-          grid, making ice cream, playing tabletop games with the robots, and having
-          a nice life.
+        value: You took the robots and left. The brain disabled the magnetic field
+          and the sun swallowed it. You're currently living off the grid, making
+          ice cream, playing tabletop games with the robots, and having a nice life.
         type: 0
         typeString: 
       - title: Sequence
@@ -26594,6 +26607,12 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
+      - originConversationID: 5
+        originDialogueID: 0
+        destinationConversationID: 5
+        destinationDialogueID: 24
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -26649,8 +26668,8 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
-      userScript: 
+      conditionsString: Variable["ShipCockpit.ClosedComms"] == false
+      userScript: Variable["ShipCockpit.ClosedComms"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -27900,8 +27919,173 @@ MonoBehaviour:
         y: 1632.244
         width: 160
         height: 30
+    - id: 24
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: What the hell, you closed comms?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 24
+        destinationConversationID: 5
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["ShipCockpit.ClosedComms"] == true
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 715.8541
+        y: 156.02234
+        width: 160
+        height: 30
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Sorry about that.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 25
+        destinationConversationID: 5
+        destinationDialogueID: 26
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 717.2547
+        y: 250.84036
+        width: 160
+        height: 30
+    - id: 26
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Anyway, how's the weather, getting warm?
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 26
+        destinationConversationID: 5
+        destinationDialogueID: 9
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 721.4564
+        y: 359.66382
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 14.005615, y: 373.49768}
+    canvasScrollPosition: {x: 0, y: 0}
     canvasZoom: 0.71400017
   - id: 6
     fields:
@@ -40919,7 +41103,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I left the station in tact, flew out, and contacted the press. News
+        value: You left the station in tact, flew out, and contacted the press. News
           spread about the entity, the brain, and the lonely robots. An investigation
           was launched and many governments came together to discuss what to do about
           this situation. The robots are still lonely.
@@ -40977,12 +41161,10 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I didn't make it home. We did trap the entity, but the magnetic field
-          separated it from it's power source and it vaporized into nothing. Doing
-          this completely destroyed the entry tube and my ship. I only have a few
-          rations left and it won't be possible for them to repair the station in
-          time to save me. I will die knowing that I betrayed everything in order
-          to help a heartless megacorporation.
+        value: You never make it home. You did trap the entity, but the magnetic
+          field separated it from it's power source and it vaporized into nothing.
+          Doing this completely destroyed the entry tube and your ship. Your rations
+          didn't last long and nobody came to save you.
         type: 0
         typeString: 
       - title: Sequence
@@ -41037,9 +41219,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: I took the robots and left. The brain disabled the magnetic field
-          and the sun swallowed it. I'm currently living off the grid, making ice
-          cream, playing tabletop games with the robots, and having a nice life.
+        value: You took the robots and left. The brain disabled the magnetic field
+          and the sun swallowed it. You're currently living off the grid, making
+          ice cream, playing tabletop games with the robots, and having a nice life.
         type: 0
         typeString: 
       - title: Sequence
@@ -41178,7 +41360,7 @@ MonoBehaviour:
         width: 803.17413
         height: 1033.609
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 3613.0396, y: 1967.0894}
+    canvasScrollPosition: {x: 5001.6475, y: 1651.899}
     canvasZoom: 0.7899996
   - id: 15
     fields:
@@ -52449,8 +52631,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1228.8569
-        y: 428.28574
+        x: 1314.5712
+        y: 488.28577
         width: 160
         height: 30
     - id: 7
@@ -53671,8 +53853,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1630.2854
-        y: 402.57144
+        x: 1690.2854
+        y: 398.28574
         width: 160
         height: 30
     entryGroups: []

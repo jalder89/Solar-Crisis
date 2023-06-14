@@ -20284,8 +20284,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 6873.468
-        y: 1279.2808
+        x: 6981.6646
+        y: 1285.8381
         width: 160
         height: 30
     - id: 323
@@ -20325,7 +20325,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 323
+        destinationConversationID: 3
+        destinationDialogueID: 327
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: Variable["End.BleedingHeart"] = true
       onExecute:
@@ -20429,7 +20435,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 325
+        destinationConversationID: 3
+        destinationDialogueID: 326
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: Variable["End.TellThePeople"] = true
       onExecute:
@@ -20441,6 +20453,229 @@ MonoBehaviour:
         y: 1153.5527
         width: 160
         height: 30
+    - id: 326
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: I left the station in tact, flew out, and contacted the press. News
+          spread about the entity, the brain, and the lonely robots. An investigation
+          was launched and many governments came together to discuss what to do about
+          this situation. The robots are still lonely.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 326
+        destinationConversationID: 3
+        destinationDialogueID: 328
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: ShowAlert("Tell the People!")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 8964.896
+        y: 1134.7003
+        width: 160
+        height: 30
+    - id: 327
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: The End. I took the robots and left. The brain decided to disabled
+          the magnetic field and the sun swallowed it. I'm currently living off the
+          grid, making ice cream, playing tabletop games with the robots, and having
+          a nice life.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 327
+        destinationConversationID: 3
+        destinationDialogueID: 328
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: ShowAlert("Bleeding Heart")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 8966.58
+        y: 1226.2107
+        width: 160
+        height: 30
+    - id: 328
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 'Thanks for playing. Follow us on itch.io, @easymode on YT, and @moonrisemansion
+          on twitter, and easymode.im for our federated site. Personal Twitter: @jalder89
+          @ward_rtw'
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 3
+        originDialogueID: 328
+        destinationConversationID: 3
+        destinationDialogueID: 329
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 9310.798
+        y: 1151.9133
+        width: 160
+        height: 30
+    - id: 329
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 15
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: Don't forget to leave feedback. You are all awesome! [em1]Feel free
+          to roam around and break stuff. Close the game anytime.[/em1]
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 3
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 9593.093
+        y: 1152.2316
+        width: 160
+        height: 30
     entryGroups:
     - name: End
       rect:
@@ -20450,8 +20685,8 @@ MonoBehaviour:
         width: 483.5
         height: 231.00006
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 6068.5737, y: 0}
-    canvasZoom: 0.6999998
+    canvasScrollPosition: {x: 7877.3896, y: 678.892}
+    canvasZoom: 0.84999967
   - id: 4
     fields:
     - title: Title
@@ -27666,7 +27901,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 786.6629}
+    canvasScrollPosition: {x: 14.005615, y: 373.49768}
     canvasZoom: 0.71400017
   - id: 6
     fields:
@@ -28073,12 +28308,6 @@ MonoBehaviour:
         originDialogueID: 0
         destinationConversationID: 14
         destinationDialogueID: 188
-        isConnector: 0
-        priority: 2
-      - originConversationID: 14
-        originDialogueID: 0
-        destinationConversationID: 14
-        destinationDialogueID: 24
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -35030,7 +35259,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: '[em1]After a long pause...[/em1]In the sun?'
+        value: '[em1]After a long pause...[/em1] In the sun?'
         type: 0
         typeString: 
       - title: Sequence
@@ -39288,7 +39517,7 @@ MonoBehaviour:
       userScript: 'Variable["End.CorporateBootLicker"] = true;
 
         ShowAlert("You
-        Corporate Boot-Licker!")'
+        Corporate Bootlicker!")'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -40633,8 +40862,9 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Thanks for playing.Follow us on itch.io, @easymode on YT, and @moonrisemansion
-          on twitter, and easymode.im for our federated site.
+        value: 'Thanks for playing. Follow us on itch.io, @easymode on YT, and @moonrisemansion
+          on twitter, and easymode.im for our federated site. Personal Twitter: @jalder89
+          @ward_rtw'
         type: 0
         typeString: 
       - title: Sequence
@@ -40714,7 +40944,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("Tell The People!")
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -40774,7 +41004,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("Corporate Bootlicker")
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -40831,7 +41061,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: ShowAlert("Bleeding Heart")
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -40948,8 +41178,8 @@ MonoBehaviour:
         width: 803.17413
         height: 1033.609
       color: {r: 1, g: 1, b: 1, a: 0.5}
-    canvasScrollPosition: {x: 4511.939, y: 1392.5383}
-    canvasZoom: 0.6699997
+    canvasScrollPosition: {x: 3613.0396, y: 1967.0894}
+    canvasZoom: 0.7899996
   - id: 15
     fields:
     - title: Title
@@ -52206,6 +52436,12 @@ MonoBehaviour:
         destinationDialogueID: 26
         isConnector: 0
         priority: 2
+      - originConversationID: 17
+        originDialogueID: 6
+        destinationConversationID: 17
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -52213,8 +52449,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 611.7143
-        y: 436.85718
+        x: 1314.5712
+        y: 488.28577
         width: 160
         height: 30
     - id: 7
@@ -52341,8 +52577,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 256.80853
-        y: 107.148926
+        x: 245.37994
+        y: 112.86322
         width: 160
         height: 30
     - id: 9
@@ -52825,8 +53061,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 58.142838
-        y: 135.84097
+        x: 66.714264
+        y: 71.5553
         width: 160
         height: 30
     - id: 17
@@ -53382,6 +53618,61 @@ MonoBehaviour:
         serializedVersion: 2
         x: 950.28564
         y: 531.1429
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: 
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 13
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: The brain is an organic computer. It specializes in reasoning.
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: 
+      conversationID: 17
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 17
+        originDialogueID: 27
+        destinationConversationID: 17
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 1690.2854
+        y: 398.28574
         width: 160
         height: 30
     entryGroups: []
